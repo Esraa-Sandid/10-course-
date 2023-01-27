@@ -1,0 +1,133 @@
+:root {
+    --main-color: rgba(23, 26, 29, 0.8);
+    --gray-color: #394047;
+    --blue-color: #428bca;
+}
+
+.navbar{
+    background: var(--main-color);
+}
+body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+.nav-item {
+    text-transform:uppercase
+}
+.slide, .slide .carousel-item{
+    height: calc(100vh);
+}
+.slide .carousel-item img{
+    height: 100%;
+}
+.carousel-indicators button{
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+.carousel-caption{
+    bottom: 40%;
+    z-index: 1;
+    display: block !important;
+}
+.carousel-item::before{
+    content: "";
+    background-color: rgba(12, 13, 14, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.icon {
+    padding: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray-color{
+    color: var(--gray-color);
+}
+.blue-color{
+    color: var(--blue-color);
+}
+.icons-area .row:hover .icon-2{
+    background-color: var(--blue-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.icon-2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.back-image{
+    width: 100%;
+    height: 300px;
+    background: url("./../images/house5.jpg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.back-image div{
+    background-color: rgba(12, 13, 14, 0.8);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team .emp{
+    background: url('../images/team1.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.team .emp:hover .social-links{
+    visibility: visible;
+}
+.social-links{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+}
+.social-links div{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.my-card{
+    padding: 40px 40px;
+    background: #fefefe;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--gray-color);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
